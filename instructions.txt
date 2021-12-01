@@ -1,0 +1,7 @@
+python linear.py a "data/train.csv" "data/test.csv" "results/a/output_a.txt" "results/a/weight_a.txt"
+python linear.py b "data/train.csv" "data/test.csv" "results/b/regularization.txt" "results/b/output_b.txt" "results/b/weight_b.txt" "results/b/bestparam.txt"
+python linear.py c "data/train_large.csv" "data/test.csv" "results/c/output_c.txt"
+grade_a.py "results/a/model_outputfile_a.txt" "results/a/model_weightfile_a.txt" "results/a/output_a.txt" "results/a/weight_a.txt"
+grade_b.py "results/b/model_outputfile_b.txt" "results/b/model_weightfile_b.txt" "results/b/output_b.txt" "results/b/weight_b.txt" "results/b/bestparam.txt"
+grade_b.py "results/b/model_outputfile_b.txt" "results/b/model_weightfile_b.txt" "results/c/output_c.txt" "results/b/weight_b.txt" "results/b/bestparam.txt"
+
