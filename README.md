@@ -36,3 +36,4 @@ regression using cross-validation on the data. All of this have benn done in fea
 
 Also, results of prediction are given in results folder, also in instruction.txt we have provided how to call linear.py for different parts(a,b,c) (for this you require training dataset and testing dataset as an arguments and links are provided above).
    
+grade_a.py and grade_b.py provide temporary correctness of the prediction.
