@@ -31,8 +31,8 @@ training our model. As the total number of features we want must be less than 30
 techniques like studying nature of the feature and seeing correlation of feature with outcome, and plotting graphs (in graphs folder) (features like some codes were not so important
 and ZIP code was also not important as facility_id was already given in the features). We were able to reduce useful features from
 30 to 22. Then we applied Lasso regression which will select a small number of features(<300). Now, we have to select an optimal regularization penalty lambda for lasso
-regression using cross-validation on the data. All of this have benn done in feature_selection.py and the important features are then hardcoded in linear.py for final prediction.
-Which got close to 78% accuracy on unseen dataset.
+regression using cross-validation on the data. All of this have benn done in feature_selection.py and the important features are then hardcoded in linear.py for final prediction. Which got close to 78% accuracy on unseen dataset.
 
 
+Also, results of prediction are given in results folder, also in instruction.txt we have provided how to call linear.py for different parts(a,b,c) (for this you require training dataset and testing dataset as an arguments and links are provided above).
    
