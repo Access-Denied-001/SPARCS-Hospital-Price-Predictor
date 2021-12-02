@@ -28,7 +28,7 @@ optimal(100). Here, optimal lambda for regularization reduces the loss function 
 
 Apply feature creation and selection to get the best possible prediction on unseen data by creating additional non-linear features. For this part we use train-large.csv file for
 training our model. As the total number of features we want must be less than 300 so we need to precisely select features that are most important. Here, we used feature selection
-techniques like studying nature of the feature and seeing correlation of feature with outcome, and plotting graphs (in graphs folder) (features like some codes were not so important
+techniques like studying nature of the feature and seeing correlation of feature with outcome, and plotting graphs (in graph folder) (features like some codes were not so important
 and ZIP code was also not important as facility_id was already given in the features). We were able to reduce useful features from
 30 to 22. Then we applied Lasso regression which will select a small number of features(<300). Now, we have to select an optimal regularization penalty lambda for lasso
 regression using cross-validation on the data. All of this have benn done in feature_selection.py and the important features are then hardcoded in linear.py for final prediction. Which got close to 78% accuracy on unseen dataset.
